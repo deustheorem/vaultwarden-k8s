@@ -1,13 +1,13 @@
 {{- if .Values.ingress.enabled -}}
-{{- $fullName := include "bitwarden-k8s.fullname" . -}}
+{{- $fullName := include "vaultwarden-k8s.fullname" . -}}
 {{- $ingressPath := .Values.ingress.path -}}
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: {{ $fullName }}
   labels:
-    app.kubernetes.io/name: {{ include "bitwarden-k8s.name" . }}
-    helm.sh/chart: {{ include "bitwarden-k8s.chart" . }}
+    app.kubernetes.io/name: {{ include "vaultwarden-k8s.name" . }}
+    helm.sh/chart: {{ include "vaultwarden-k8s.chart" . }}
     app.kubernetes.io/instance: {{ .Release.Name }}
     app.kubernetes.io/managed-by: {{ .Release.Service }}
 {{- with .Values.ingress.annotations }}

@@ -3,9 +3,9 @@
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: {{ template "bitwarden-k8s.fullname" . }}
+  name: {{ template "vaultwarden-k8s.fullname" . }}
   labels:
-    app: {{ template "bitwarden-k8s.fullname" . }}
+    app: {{ template "vaultwarden-k8s.fullname" . }}
     chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
     release: "{{ .Release.Name }}"
     heritage: "{{ .Release.Service }}"

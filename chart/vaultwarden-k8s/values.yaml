@@ -1,11 +1,11 @@
-# Default values for bitwarden-k8s.
+# Default values for vaultwarden-k8s.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
 replicaCount: 1
 
 image:
-  repository: bitwardenrs/server
+  repository: vaultwardenrs/server
   tag: latest
   pullPolicy: IfNotPresent
   # imagePullSecrets for accessing private registries
@@ -49,11 +49,11 @@ ingress:
     kubernetes.io/tls-acme: "true"
   path: /
   hosts:
-    - bitwarden.example
+    - vaultwarden.example
   tls:
-    - secretName: bitwarden-tls
+    - secretName: vaultwarden-tls
       hosts:
-        - bitwarden.example
+        - vaultwarden.example
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
@@ -83,4 +83,4 @@ persistence:
   accessMode: ReadWriteOnce
   size: 800Mi
   #storageClass:
-  #existingClaim: "bitwarden-pvc"
+  #existingClaim: "vaultwarden-pvc"
