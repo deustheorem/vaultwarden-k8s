@@ -1,0 +1,22 @@
+apiVersion: v1
+entries:
+  vaultwarden-k8s:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2022-08-06T15:18:52.450623473Z"
+    description: A Vaultwarden Helm chart for Kubernetes
+    digest: 425b53ed9c708f78efffa2e38b8aaedc3c1f9c548adb0992e06f6c179dfd777f
+    home: https://github.com/dani-garcia/vaultwarden
+    icon: https://raw.githubusercontent.com/vaultwarden/brand/master/icons/icon.svg
+    maintainers:
+    - email: deustheorem@atwtech.co
+      name: Deustheorem
+      url: https://atwtech.co
+    name: vaultwarden-k8s
+    sources:
+    - https://github.com/dani-garcia/vaultwarden
+    - https://github.com/deustheorem/vaultwarden-k8s
+    urls:
+    - https://github.com/deustheorem/vaultwarden-k8s/releases/download/vaultwarden-k8s-0.1.6/vaultwarden-k8s-0.1.6.tgz
+    version: 0.1.6
+generated: "2022-08-06T15:18:52.342003903Z"
